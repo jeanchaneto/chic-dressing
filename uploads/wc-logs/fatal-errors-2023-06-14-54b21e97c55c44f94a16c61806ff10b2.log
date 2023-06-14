@@ -1,0 +1,18 @@
+2023-06-14T08:13:17+00:00 CRITICAL Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-includes/class-wp-hook.php(308): init_wysija_cron('')
+#7 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-settings.php(623): do_action('init')
+#10 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-config.php(106): require_once('/Users/jeanchan...')
+#11 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-load.php(50): require_once('/Users/jeanchan...')
+#12 /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/jeanchan...')
+#13 {main}
+  thrown dans /Users/jeanchane-to/Desktop/LAP-DEV/Wordpress/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php à la ligne 161
+
